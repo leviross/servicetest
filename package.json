@@ -1,0 +1,11 @@
+{
+  "name": "interview-test",
+  "version": "0.0.0",
+  "description": "Simple interview test",
+  "main": "server.js",
+  "author": "Mike",
+  "dependencies": {
+    "body-parser": "^1.12.3",
+    "express": "^4.12.3"
+  }
+}
