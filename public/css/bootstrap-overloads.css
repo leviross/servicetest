@@ -6,6 +6,17 @@ body {
 .form-group {
     margin-bottom: 4px;
 }
+/* Personal added classes for alternating colors in table*/
+
+.odd{
+    background-color: rgba(156, 249, 173, 0.3);
+}
+.even{
+    background-color: rgba(206, 230, 252, 0.4);
+}
+.pinkBackground{
+    background-color: rgb(254, 127, 125);
+}
 
 .pagination > li > a,
 .pagination > li > span,
@@ -29,7 +40,7 @@ body {
 /* navbar */
 .navbar {
     min-height: 30px;
-    margin-bottom: 4px; 
+    margin-bottom: 4px;
 }
 .navbar-default {
     /*background-color: #637F93;*/
