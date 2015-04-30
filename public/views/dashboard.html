@@ -22,14 +22,14 @@
                                 <th style="width:20px"></th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr ng-class="fourteenDays? 'pinkBackground': 'regular'" ng-class-odd="'odd'" ng-class-even="'even'" ng-repeat="record in records">
+                        <tbody><!-- Ternary Operater to toggle class based on expression  -->
+                            <tr ng-class="record.diff > 14 ? 'pinkBackground': 'regular'" ng-class-odd="'odd'" ng-class-even="'even'" ng-repeat="record in records">
                                 <td><a href=""></a>{{record._id}}</a></td>
                                 <td>{{record.WorkOrderNo}}</td>
                                 <td>{{record.Parts[0].Qty}}</td>
                                 <td>{{record.Parts[0].PartNo}}</td>
-                                <td>{{record.Parts[0].OrderedOn}}</td>
-                                <td class="btn btn-primary" ng-click="completeOrder()">Recieved</td>
+                                <td>{{record.diff}}</td>
+                                <td ng-class="record.completed ? 'btn btn-default' : 'btn btn-primary'" ng-click="completeOrder(record._id)">Recieved</td>
                             </tr>
                         </tbody>
                     </table>

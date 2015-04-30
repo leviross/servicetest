@@ -1,0 +1,18 @@
+<div class="modal-header">
+  <h3 class="modal-title">Enter Customer Name</h3>
+</div>
+<div class="modal-body">
+  <div class="row">
+    <div class="col-sm-12">
+      <form name="loginForm" ng-submit="updateOrder(showId)" novalidate>
+        <div class="form-group">
+          <label>Username</label>
+          <input ng-model="username" type="text" class="form-control" required>
+        </div>
+        <input type="submit" value="Update" class="btn btn-primary">
+        <button type="button" class="btn btn-default" ng-click="cancel()">Cancel</button>
+      </form>
+    </div>
+
+  </div>
+</div>

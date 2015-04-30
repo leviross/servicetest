@@ -1,5 +1,5 @@
 
-var app = angular.module('MCS_ServiceApp', ['ngRoute', 'ngResource', 'ngSanitize', 'ui.bootstrap']).config(function () {
+var app = angular.module('MCS_ServiceApp', ['ui.bootstrap', 'ngRoute', 'ngResource', 'ngSanitize']).config(function () {
     // so we can render html without the sanitization
     //$sceProvider.enabled(false);
 });
@@ -16,8 +16,10 @@ app.config(function ($routeProvider) {
         templateUrl: "views/dashboard.html"
     }).when("/record/:id?", {
         templateUrl: "views/record.html"
-    }).otherwise({
-      redirectTo: ''
-  });
+    });
+
+  //   .otherwise({
+  //     redirectTo: ''
+  // });
 
 });
